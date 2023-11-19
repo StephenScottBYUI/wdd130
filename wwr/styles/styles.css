@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Slab&display=swap');
-
+.home-title
 * {
     margin: 0;
     padding: 0;
@@ -90,7 +90,7 @@ footer{
 }
 .home-title{
     color:#ffe78b;
-    font-size: 2em;
+    font-size: 4em;
     margin-top: 10px;
 }
 .book, .join{
@@ -197,14 +197,16 @@ main section img{
     grid-row: 5/8;
     box-shadow: 5px 5px 10px #6f7364;
 }
+
+   
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
-        display: block;
-        height: auto;
-    }
-    nav, footer {
-        flex-direction: column;
-    }
+        #hero, .home-grid {
+            display: block;
+            height: auto;
+        }
+        nav, footer {
+            flex-direction: column;
+        }
     nav a {
         display: block;
         padding: 15px;
@@ -238,3 +240,68 @@ main section img{
         margin-top: 25px;
     }
 }
+    .rivers-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+    }
+    .salmon {
+        grid-column: 2/3;
+    }
+    .desolation {
+        grid-column: 4/5;
+    }
+    .grand-canyon {
+        grid-column: 6/7;
+    }
+
+    .rivers-grid section {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 12% 1fr;
+        
+        
+    }
+    .rivers-grid section:hover {
+        transform: scale(1.1);
+        border:10px solid #BF0020;
+        border-radius: 25px; 
+        min-height: 0;
+        min-width: 0;
+    }
+    
+    .rivers-grid section img {
+        height: 100%;
+        min-height: 975px;
+        width: 100%;
+        opacity: 0.3;
+        grid-column: 1/2;
+        grid-row: 1/3;
+        z-index: 1;
+        border-radius: 15px;
+        
+    }
+    .rivers-grid section h1 {
+        grid-column: 1/2;
+        z-index: 2;
+        grid-row: 1/2;
+        padding-top: 10px;
+        
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+    }
+    .rivers-grid section p {
+        z-index: 2;
+        grid-column: 1/2;
+        grid-row: 2/3;
+        overflow: hidden;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: block;
+        align-self: baseline;
+    }
+
+    
+
+
