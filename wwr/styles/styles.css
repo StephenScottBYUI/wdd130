@@ -242,25 +242,20 @@ main section img{
 }
     .rivers-grid {
         display: grid;
-        grid-template-columns: 1fr 2fr 1fr 2fr 1fr 2fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-column-gap: 250px;
+        grid-row-gap:6px;
+        
     }
-    .salmon {
-        grid-column: 2/3;
-    }
-    .desolation {
-        grid-column: 4/5;
-    }
-    .grand-canyon {
-        grid-column: 6/7;
-    }
-
+   
     .rivers-grid section {
         display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 12% 1fr;
-        
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-column-gap: 250px;
+        grid-row-gap:6px;
         
     }
+    
     .rivers-grid section:hover {
         transform: scale(1.1);
         border:10px solid #BF0020;
@@ -268,6 +263,10 @@ main section img{
         min-height: 0;
         min-width: 0;
     }
+    
+    @media (hover: none) {
+        a:hover { color: inherit; }
+      }
     
     .rivers-grid section img {
         height: 100%;
