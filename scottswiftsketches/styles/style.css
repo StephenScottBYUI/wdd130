@@ -1,0 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* don't forget to delete this img */
+img {
+    max-width: 1000px;
+}
