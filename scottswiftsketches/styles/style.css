@@ -322,7 +322,31 @@ footer a {
   img.hover-shadow {
     transition: 0.3s;
   }
-  
+  .hover-shadow {
+    box-shadow: 2px 2px 5px black;
+  }
   .hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 5px solid var(--nav-hover-link-color);
+  }
+  #pricing-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2vw;
+  }
+  .packages {
+    background-color: var(--headline-color-on-color);
+    color: var(--paragraph-color-on-color);
+    padding: 2vw;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 10px;
+
+
+  }
+  .packages h2 {
+    color: var(--nav-hover-background-color);
+    font-size: 2vw;
+  }
+  .packages li{
+    font-size: 1vw;
   }
