@@ -175,6 +175,7 @@ footer {
     font-family: var(--paragraph-font);
     font-size: 1vw;
     font-weight: 700;
+    border-radius: 25px;
     
 }
 footer a {
@@ -335,18 +336,22 @@ footer a {
     column-gap: 2vw;
   }
   .packages {
-    background-color: var(--headline-color-on-color);
-    color: var(--paragraph-color-on-color);
+    
+    color: var(--paragraph-color-on-white);
     padding: 2vw;
-    box-shadow: 2px 2px 5px black;
-    border-radius: 10px;
-
-
+    
+    border-radius: 20px 50px;
+    border: 10px solid var(--secondary-color);
+    box-shadow: inset 5px 5px 5px var(--accent2-color);
   }
   .packages h2 {
-    color: var(--nav-hover-background-color);
+    color: var(--paragraph-color-on-white);
     font-size: 2vw;
   }
   .packages li{
     font-size: 1vw;
   }
+  
+   
+    
+  
